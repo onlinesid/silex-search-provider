@@ -1,0 +1,22 @@
+{
+  "name": "onlinesid/silex-sphinx-provider",
+  "description": "Silex service provider for Sphinx search engine",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sid Bachtiar",
+      "email": "sid.bachtiar@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "silex/silex": "~1.3",
+    "nilportugues/sphinx-search": "~1.0"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "OnlineSid\\Silex\\Provider\\Sphinx\\": "src/Provider/Sphinx/"
+    }
+  }
+}
