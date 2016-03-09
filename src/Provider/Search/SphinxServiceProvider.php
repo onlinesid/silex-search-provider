@@ -15,9 +15,9 @@ class SphinxServiceProvider implements ServiceProviderInterface
 {
     public function register(Application $app)
     {
-        $app['sphinx.options'] = array();
-        $app['search'] = $app->share(function ($app) {
-            $options = $app['sphinx.options'];
+        $app['sphinx_options'] = array();
+        $app['sphinx_client'] = $app->share(function ($app) {
+            $options = $app['sphinx_options'];
 
             $options['host'] = isset($options['host']) ? $options['host'] : '127.0.0.1';
             $options['port'] = isset($options['port']) ? $options['port'] : '9312';
