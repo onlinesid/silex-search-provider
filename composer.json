@@ -16,7 +16,7 @@
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "OnlineSid\\Silex\\Provider\\Sphinx\\": "src/Provider/Sphinx/"
+      "OnlineSid\\Silex\\Provider\\Search\\": "src/Provider/Search/"
     }
   }
 }
